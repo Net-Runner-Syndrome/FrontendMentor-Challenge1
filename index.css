@@ -3,12 +3,21 @@
         background-color: hsl(212, 45%, 89%);
         font-size: 15px;  
         font-family: 'Outfit', sans-serif; 
+        height: 875px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 33% 33% 33%;
+        justify-items: center;
+        align-items: center;
     }
     main
     {
+        grid-column: 1/4;
+        grid-row: 1/4;
+
         height: 500px;
         display: grid;
-        justify-self: center;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto 95%;
     }
