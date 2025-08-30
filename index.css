@@ -50,7 +50,7 @@
     .QR-Border
     {
         grid-column: 2;
-
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
         border-radius:10px;
         background-color:white;
         margin:auto;
@@ -76,4 +76,29 @@
         color:  hsl(218, 44%, 22%); 
         grid-column: 1/4;
         grid-row: 2;
+    }
+@media(max-width:768px)
+{
+    .QR-Border
+    {
+        grid-column: 1/4;
+        max-width: 50%;
+    }
+}
+
+    @media(max-width: 480px)
+    {
+        .QR-Border
+        {
+            grid-column: 1/4;
+        }
+    }
+
+    @media(max-width: 320px)
+    {
+        .QR-Border
+        {
+            grid-column: 1/4;
+            max-width: 100%;
+        }
     }
